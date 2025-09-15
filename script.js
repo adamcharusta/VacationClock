@@ -46,8 +46,11 @@ const el = {
   endDate: document.getElementById("end-date"),
 };
 
-el.date.textContent = new Date().toLocaleDateString('pl-PL', { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' });
-el.endDate.textContent = getEndOfSchoolYear().toLocaleDateString('pl-PL', { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' });
+const language = "pl-PL";
+const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+
+el.date.textContent = new Date().toLocaleDateString(language, options);
+el.endDate.textContent = getEndOfSchoolYear().toLocaleDateString(language, options);
 
 const interval = setInterval(() => {
   const NOW = new Date();
