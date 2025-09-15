@@ -4,12 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="/normalize.css">
+  <title>Ile do wakacji?</title>
+  <meta name="description" content="Odliczanie do końca roku szkolnego. Sprawdź, ile dni zostało do wakacji!">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+  <main>
+    <h1>Koniec Roku Szkolnego</h1>
+    <h2>Dzisiaj jest poniedziałek, 15 sierpnia 2023</h2>
+    <h3>Pozostało dni do końca roku szkolnego:</h3>
+    <section class="countdown" aria-live="polite">
+      <ul class="countdown__list">
+        <li class="countdown__item">
+          <span class="countdown__number" id="months">0</span>
+          <span class="countdown__label">Miesięcy</span>
+        </li>
+        <li class="countdown__item">
+          <span class="countdown__number" id="weeks">0</span>
+          <span class="countdown__label">Tygodni</span>
+        </li>
+        <li class="countdown__item">
+          <span class="countdown__number" id="days">0</span>
+          <span class="countdown__label">Dni</span>
+        </li>
+        <li class="countdown__item">
+          <span class="countdown__number" id="hours">0</span>
+          <span class="countdown__label">Godzin</span>
+        </li>
+        <li class="countdown__item">
+          <span class="countdown__number" id="minutes">0</span>
+          <span class="countdown__label">Minut</span>
+        </li>
+        <li class="countdown__item">
+          <span class="countdown__number" id="seconds">0</span>
+          <span class="countdown__label">Sekund</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
   <script src="script.js"></script>
 </body>
 
