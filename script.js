@@ -8,7 +8,7 @@ function getEndOfSchoolYear(baseDate = new Date()) {
 }
 
 function diffWithMonths(from, to) {
-  if (to <= from) return { months: 0, weeks: 0, days: 0, hours: 0, minutes: 0, seconds: 0, done: true };
+  if (to <= from) return { months: 0, weeks: 0, days: 0, hours: 0, minutes: 0, seconds: 0 };
 
   let months = 0;
   let cursor = new Date(from);
